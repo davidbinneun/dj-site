@@ -9,6 +9,7 @@ body {
     width: 100%;
     background-color: black;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     font-family: Verdana;
     position: fixed;
@@ -16,7 +17,8 @@ body {
 }
 
 .navitem {
-    padding: 1%;
+    margin: 10px;
+    padding: 20px 40px;
     background-color: white;
     transform: skewX(20deg);
     align-self: flex-end;
@@ -50,7 +52,13 @@ body {
 #content {
     width: 50vw;
     margin: auto;
-    padding-top: 130px;
+    padding-top: 20vh;
+}
+
+@media (max-width: 1000px){
+    #content {
+        width: 95%;
+    }
 }
 
 #footer {
