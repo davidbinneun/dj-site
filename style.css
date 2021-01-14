@@ -1,5 +1,6 @@
 :root {
     --sigred:  rgb(182, 53, 53);
+    --darkred:  rgb(131, 37, 37);
     --turk:  rgb(56, 168, 140);
 }
 
@@ -9,7 +10,7 @@ body {
     margin: 0;
     color: white;
     font-family: monospace;
-    font-size: 2vh;
+    font-size: 20px;
 }
 
 #navbar {
@@ -142,6 +143,21 @@ input:focus {
     outline: none;
     border: 2px solid var(--sigred);
     color: var(--sigred);
+}
+
+.button {
+    border: 0;
+    color: white;
+    background-image: linear-gradient(to bottom, var(--sigred),var(--darkred));
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-image: linear-gradient(to top, var(--sigred),var(--darkred));
+    cursor: pointer;
 }
 
 #footer {
