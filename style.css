@@ -1,8 +1,61 @@
 body {
     background-color: black;
     margin: 0;
+    color: white;
+    font-family: monospace;
 }
 
 #navbar {
-    background-color: rgb(41, 41, 41);
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: Verdana;
+    position: fixed;
+    padding-bottom: 1%;
+}
+
+.navitem {
+    padding: 1%;
+    background-color: white;
+    transform: skewX(20deg);
+    align-self: flex-end;
+}
+
+.navitem:hover {
+    background-color: rgb(182, 53, 53);
+    animation-name: pump;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pump {
+    50% {
+        transform: skewX(20deg) scale(1.05);
+    }
+}
+
+.navlink {
+    display: block;
+    transform: skewX(-20deg);
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.navlink:hover {
+    color: white;
+}
+
+#content {
+    width: 50vw;
+    margin: auto;
+    padding-top: 130px;
+}
+
+#footer {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
