@@ -9,7 +9,7 @@ body {
     margin: 0;
     color: white;
     font-family: monospace;
-    font-size: 20px;
+    font-size: 2vh;
 }
 
 #navbar {
@@ -20,6 +20,7 @@ body {
     font-family: Verdana;
     position: fixed;
     padding-bottom: 1%;
+    background-image: linear-gradient(to top, rgba(255,0,0,0), rgba(0,0,0,1));
 }
 
 #logo {
@@ -35,6 +36,7 @@ body {
     transform: skewX(15deg);
     align-self: flex-end;
     border: none;
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
 }
 
 .navitem:hover {
@@ -100,6 +102,7 @@ h2 {
 @media (max-width: 1000px){
     #content {
         width: 95%;
+        padding-top: 100px;
     }
 }
 
@@ -121,7 +124,7 @@ form {
 }
 
 label {
-    padding: 20px;
+    padding: 2vh;
     margin: 10px;
 }
 
