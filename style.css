@@ -38,6 +38,7 @@ body {
     align-self: flex-end;
     border: none;
     box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
+    user-select: none;
 }
 
 .navitem:hover {
@@ -134,7 +135,7 @@ input {
     background-color: black;
     border: 2px solid white;
     border-radius: 4px;
-    padding: 20px;
+    padding: 2%;
     margin: 10px;
     color: white;
 }
